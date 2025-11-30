@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | K&K Online Store</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="ElectroHub Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                    <!-- Cart Icon -->
+					<li class="nav-item"><a href="#" class="cart-icon ms-auto">
+					<img src="images/cart-icon.svg" alt="Cart" height="30"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-subtitle">
+            <h2 class="subtitle">Contact Us</h2>
+    </header>
+    	<section class="section-title">
+    	    <h2> Get in Touch with Us 
+                <img src="images/copy-book.png" alt="icon" class="icon"> 
+            </h2>
+            <p class="text-muted">We’d love to hear some feedback from you. Send us a message below.</p>
+	    </section>
+        
+        <section class="contact-wrapper">
+            <div class ="contact-form">
+                <form id="contactForm">
+                    <div> 
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" required placeholder="Enter your full name">
+                    <div id="nameError" class="error-msg">Please enter your full name.</div>
+                    </div>
+                    <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" id="email" required placeholder="Enter your email address">
+                    <div id="emailError" class="error-msg">Please enter a valid email address.</div>
+                    </div>
+                    <div>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" rows="5" required placeholder="Type your message here ..."></textarea>
+                    <div id="messageError" class="error-msg">Please enter your message.</div>
+                    </div>
+                    <button type="submit" class="custom-btn">Send Feedback</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Online Support</h3>
+                <ul class="contact-list">
+                    <li>
+                        <img src="images/whatsapp.png" alt="icon" class="icon">
+                        WhatsApp
+                        <strong class="phone-number">+012 345 6789</strong>
+                    </li>
+
+                    <li>
+                        <img src="images/clock.png" alt="icon" class="icon">
+                        Hours: <strong>09:00 – 17:00 (Mon–Sun)</strong>
+                    </li>
+
+                    <li>
+                        <img src="images/facebook.png" alt="icon" class="icon">
+                        Follow us on:<br>
+                        <a href="https://facebook.com" target="_blank">K&K | Online Store</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 K&K | Online Store. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
