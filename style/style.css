@@ -18,6 +18,32 @@ body {
     font-size: 3.8rem;
     font-weight: 700;
 }
+
+.my-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex: 1;
+}
+
+.my-container p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+
+a {
+    color: #a8c8e4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #7da4c9;
+}
+
 /* -------------------- Hero Section -------------------- */
 .hero {
     background-image: url("../images/home_background.png");
@@ -31,7 +57,7 @@ body {
     text-align: center;
     padding: 60px 20px;
     position: relative;
-    color: #1a3f6b; /* your text colour */
+    color: #1a3f6b;
 }
 
 .hero-subtitle {
@@ -49,20 +75,31 @@ body {
     position: relative;
 }
 
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .hero-content h1 {
     font-size: 3.8rem;
     font-weight: 700;
-    margin-top: -20px;   /* moves closer to top */
-    margin-bottom: 30px; /* small gap below heading */
+    margin-top: -20px;   
+    margin-bottom: 30px; 
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 40px; /* bigger gap between text button */
+    margin-bottom: 40px;
     color: #44545f;
 }
 
-/* -------------------- Products display -------------------- */
+.hero .custom-btn {
+    padding: 12px 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* -------------------- Products display on home page (index.html)-------------------- */
 .section-title {
     text-align: center;
     margin-top: 40px;
@@ -72,23 +109,8 @@ body {
 .section-title h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #1a3f6b; /* your theme colour */
+    color: #1a3f6b; 
     margin-bottom: 30px;
-}
-
-.my-container {
-    max-width: 1200px;      /* container width limit */
-    margin: 0 auto;          /* center horizontally */
-    margin-top: 50px;
-    margin-bottom: 50px;
-    flex: 1;
-}
-
-.my-container p {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
 }
 
 .products {    
@@ -106,7 +128,7 @@ body {
     cursor: pointer;
     display: block;
     overflow: hidden;
-    border-radius: 12px;      /* rounded edges */
+    border-radius: 12px;
     transition: transform 0.3s ease;
 }
 
@@ -145,8 +167,6 @@ body {
 }
 
 /* -------------------- Navbar -------------------- */
-
-
 .navbar-brand img {
     border-radius: 8px;
 }
@@ -164,7 +184,7 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-    font-weight: 700; /* bold */
+    font-weight: 700; 
 }
 
 .navbar-nav .nav-link:hover,
@@ -195,7 +215,6 @@ body {
     display: block;
     transition: transform 0.3s ease;
 }
-
 
 /* -------------------- Mobile collapsed navbar -------------------- */
 @media (max-width: 768px) {
@@ -257,48 +276,6 @@ body {
     color:white;
 }
 
-/* -------------------- Hero Section -------------------- */
-
-.hero-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.hero .custom-btn {
-    padding: 12px 30px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 3rem;
-        margin-top: 0;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-        margin-bottom: 40px;
-    }
-
-    .hero .custom-btn {
-        margin-top: 50px;
-    }
-
-    .my-container {
-        padding:0 60px;
-    }
-
-    .subtitle {
-    font-size: 3rem;
-    }
-
-    .card {
-        width: 90%;
-    }
-}
-
 /* -------------------- Product Cards -------------------- */
 
 .card:hover {
@@ -339,7 +316,7 @@ footer {
     margin-top: 20px;
 }
 
-/* -------------------- Forms -------------------- */
+/* -------------------- Contact Us page elements -------------------- */
 .icon {
     width: 28px;
     height: 28px;
@@ -396,7 +373,6 @@ textarea.is-invalid {
     margin-bottom: 20px;
 }
 
-/* Vertical line between columns */
 .contact-form, 
 .contact-info {
     flex: 1;
@@ -432,10 +408,37 @@ textarea.is-invalid {
     color: #7da4c9;
     cursor: pointer; 
 }
-/* Mobile layout */
+
+/* -------------------- Mobile screen -------------------- */
 @media (max-width: 768px) {
-    .contact-wrapper {
-        flex-direction: column;
+    .hero-content h1 {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+    .hero .custom-btn {
+        margin-top: 50px;
+    }
+
+    .my-container {
+        padding:0 60px;
+    }
+
+    .subtitle {
+		font-size: 3rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+	
+	.contact-wrapper {
+		flex-direction: column;
         gap: 20px;
         padding-bottom: 15px;
         margin: 0 auto;
@@ -452,16 +455,4 @@ textarea.is-invalid {
         padding-left: 0;
         padding-top: 15px;
     }
-}
-
-
-/* -------------------- Links -------------------- */
-a {
-    color: #a8c8e4;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #7da4c9;
 }
